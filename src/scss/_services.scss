@@ -1,0 +1,74 @@
+@mixin cyrcle($width, $height, $bdcolor) {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: $width;
+    height: $height;
+    border: 1px solid $bdcolor;
+    border-radius: 100%;
+    z-index: -2;
+}
+
+.services {
+    max-width: 1113px;
+    width: 100%;
+    margin: 110px auto 0;
+
+    &__title {
+        @include textStyle(bold, 36px, 53px, #323232);
+        text-align: center;
+        margin: 0;
+    }
+
+    &__descr {
+        @include textStyle(normal, 16px, 20px, #999);
+        text-align: center;
+        margin: 50px 0 0;
+    }
+
+    .row {
+        .col {
+            .wrapper {
+                display: flex;
+                margin-right: 30px;
+                margin-left: 30px;
+
+                &__icon {
+                    width: 40px;
+                    height: 40px;
+                    position: relative;
+                    margin: 105px 50px 0 0;
+
+                    &::before {
+                        @include cyrcle(90px, 90px, #4985FF);
+                    }
+
+                    &::after {
+                        @include cyrcle(110px, 110px, #E0E0E0);
+                    }
+                }
+
+                &__title {
+                    @include textStyle(600, 18px, 22px, #000);
+                    margin: 116px 0 0;
+                    position: relative;
+                    z-index: -2;
+                }
+
+                &__descr {
+                    @include textStyle(normal, 14px, 22px, #999);
+                    margin: 12px 0 0 0;
+                    position: relative;
+                    z-index: -2;
+                }
+            }
+        }
+    }
+
+    &__btn {
+        @include btn;
+        margin-top: 55px;
+    }
+}

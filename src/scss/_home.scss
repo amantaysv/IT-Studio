@@ -1,0 +1,23 @@
+.home {
+    max-width: 1920px;
+    width: 100%;
+    background: url(../images/bg.png) center top/cover no-repeat;
+    margin: 0 auto;
+    padding: 319px 0 335px;
+
+    &__title {
+        @include textStyle(500, 16px, 20px, #fff);
+        text-align: center;
+    }
+
+    &__descr {
+        @include textStyle(800, 48px, 64px, #fff);
+        text-align: center;
+        margin: 20px 0 0;
+    }
+
+    &__btn {
+        @include btn;
+        margin: 50px auto 0;
+    }
+}

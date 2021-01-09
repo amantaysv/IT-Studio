@@ -1,0 +1,22 @@
+@mixin btn {
+    display: block;
+    width: 200px;
+    height: 45px;
+    border-radius: 30px;
+    background-color: #4985FF;
+    border: none;
+    outline: none;
+    box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
+    font-family: Montserrat;
+    font-weight: 500;
+    color: #ffffff;
+    margin: 0 auto;
+
+    &:focus {
+        outline: none;
+    }
+
+    &:hover {
+        background: #1a66ff;
+    }
+}

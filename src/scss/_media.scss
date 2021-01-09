@@ -1,0 +1,370 @@
+// @media (min-width:1200px) {}
+
+// @media (min-width: 992px) and (max-width: 1200px) {}
+
+// @media (min-width: 768px) and (max-width: 992px) {}
+
+// @media (min-width: 576px) and (max-width: 768px) {}
+
+@media (max-width:576px) {
+    .home {
+        max-width: 576px;
+        padding: 100px 0 100px;
+
+        &__descr {
+            @include textStyle(700, 25px, 30px, #fff);
+            margin: 40px 0 0;
+        }
+
+        &__btn {
+            @include btn;
+            margin: 50px auto 0;
+        }
+    }
+
+    .services {
+        max-width: 576px;
+        margin: 55px auto 0;
+
+        &__title {
+            @include textStyle(600, 25px, 30px, #323232);
+
+        }
+
+        .row {
+            .col {
+                .wrapper {
+                    margin-top: -50px;
+                    margin-right: 0;
+
+                    &__title {
+                        @include textStyle(600, 16px, 22px, #000);
+                    }
+                }
+            }
+        }
+    }
+
+    .about-us {
+        margin-top: 50px;
+        padding-top: 40px;
+        position: relative;
+        z-index: -2;
+
+        &__img {
+            margin-top: 30px;
+        }
+
+        .container {
+
+            .row-1 {
+                position: relative;
+
+                &::before {
+                    margin-top: 45px;
+                }
+            }
+
+            .row-2 {
+                margin-top: 60px;
+                padding-bottom: 70px;
+
+                .col {
+                    .wrapper {
+                        margin: 30px auto 0;
+                    }
+                }
+            }
+        }
+
+        &__title {
+            @include textStyle(600, 25px, 30px, #323232);
+            text-align: center;
+        }
+
+        &__descr {
+            text-align: center;
+        }
+
+        &__link {
+            text-align: center;
+        }
+    }
+
+    .all-services {
+        background: transparent;
+        padding: 50px 0 45px;
+
+        .container {
+            .row-2 {
+                position: relative;
+                z-index: -2;
+
+                &::before {
+                    margin-top: 45px;
+                }
+
+                .col_1 {
+                    margin: 0 auto;
+                    margin-top: 35px;
+
+                    .wrapper {
+                        text-align: center;
+
+                        &__img {
+                            width: 100%;
+                            height: 100%;
+                        }
+
+                        &__title {
+                            margin: 15px 0 10px;
+                        }
+                    }
+                }
+            }
+        }
+
+        &__title {
+            @include textStyle(600, 25px, 30px, #000);
+            text-align: center;
+            position: relative;
+            z-index: -2;
+        }
+
+        &__btn {
+            @include btn;
+            margin: 20px auto 0;
+            position: relative;
+            z-index: -2;
+        }
+    }
+
+    .all-project {
+        margin-top: 65px;
+        padding: 50px 0 65px;
+        z-index: -2;
+
+        .container {
+            .row {
+                .col_1 {
+                    margin: 35px auto 0;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+        }
+
+        &__title {
+            @include textStyle(600, 25px, 30px, #000);
+        }
+
+        &__descr {
+            margin: 25px auto 0;
+        }
+    }
+
+    .video {
+        padding: 35px 0 45px;
+        z-index: -2;
+
+        &__title {
+            @include textStyle(600, 25px, 30px, #fff);
+            text-align: center;
+        }
+
+        &__descr {
+            @include textStyle(normal, 16px, 25px, #fff);
+            text-align: center;
+            margin-top: 15px;
+        }
+
+        &__block {
+            height: auto;
+            max-width: 576px;
+            background: url(../images/videoImg.png) center/cover no-repeat;
+            width: 100%;
+            margin: 35px auto 0;
+
+            &::before {
+                position: absolute;
+                content: '';
+                max-width: 1110px;
+                width: 100%;
+                height: 1px;
+                background: #E0E0E0;
+                top: 100%;
+                left: 50%;
+                transform: translate(-50%);
+            }
+        }
+
+        &__link {
+            width: 200px;
+            height: 60px;
+            margin: 85px auto 85px;
+        }
+
+        &__icon {
+            margin-right: 11px;
+            width: 30px;
+            height: 30px;
+        }
+
+        &__text {
+            font-size: 12px;
+            ;
+        }
+    }
+
+    .subscribe {
+        margin: 75px auto 0;
+
+        &__area {
+            width: 85%;
+        }
+
+        &__email {
+            width: 85%;
+            padding: 0 5px 0 15px;
+            border-radius: 25px;
+        }
+
+        &__btn {
+            width: 85%;
+            @include textStyle(500, 14px, 20px, #fff);
+        }
+    }
+
+    .footer {
+        margin: 45px auto 0;
+        position: relative;
+        padding: 35px 0 15px;
+        background: #f6f6f8;
+
+        .container {
+            .row {
+                .col {
+                    .wrapper {
+
+                        &__title {
+                            @include textStyle(600, 14px, 20px, #000);
+                        }
+
+                        &__text {
+                            @include textStyle(normal, 12px, 15px, #999);
+                        }
+                    }
+                }
+            }
+        }
+
+        &__text {
+            @include textStyle(normal, 13px, 21px, #999);
+            text-align: center;
+            margin-top: 15px;
+        }
+    }
+
+    .header {
+        position: fixed;
+        border-bottom: 1px solid transparent;
+
+        .container {
+            .nav {
+                position: fixed;
+                top: 0;
+                right: 101%;
+                padding: 35px 0;
+                width: 70%;
+                height: auto;
+                background: #4985FF;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                transition: .5s;
+
+                &.active {
+                    right: 0;
+                }
+
+                &__item {
+                    margin: 20px 0 0;
+                    font-size: 18px;
+
+                    &:last-child {
+                        margin-bottom: 20px;
+                    }
+
+                    &:hover::before {
+                        bottom: -2px;
+                    }
+                }
+            }
+
+            .burger {
+                position: fixed;
+                top: 20px;
+                right: 20px;
+                width: 26px;
+                height: 26px;
+                display: flex;
+                align-items: center;
+                cursor: pointer;
+
+                &.active {
+                    .burger__line {
+                        background: none;
+
+                        &::before {
+                            transform: rotate(135deg);
+                            top: 0;
+                        }
+
+                        &::after {
+                            transform: rotate(45deg);
+                            bottom: 0;
+                        }
+                    }
+                }
+
+                &__line {
+                    position: relative;
+                    width: 30px;
+                    height: 2px;
+                    background: #fff;
+
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        background: #fff;
+                        top: 8px;
+                        left: 0;
+                        transition: .25s;
+                    }
+
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        background: #fff;
+                        bottom: 8px;
+                        left: 0;
+                        transition: .25s;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width:576px) {
+    .burger {
+        display: none;
+    }
+}
