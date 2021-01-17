@@ -1,3 +1,6 @@
+@import url(../libs/bootstrap/bootstrap.min.css);
+@import url(../libs/jqueryFancybox/jquery.fancybox.min.css);
+@import url(../fonts/Montserrat/stylesheet.css);
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
