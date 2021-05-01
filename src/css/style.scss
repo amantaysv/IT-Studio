@@ -1,17 +1,14 @@
-@import url(../libs/bootstrap/bootstrap.min.css);
-@import url(../libs/jqueryFancybox/jquery.fancybox.min.css);
+@import url(../libs/bootstrap/css/bootstrap.min.css);
+@import url(../libs/fancybox/css/jquery.fancybox.min.css);
+@import url(../libs/fontawesome/css/all.min.css);
 @import url(../fonts/Montserrat/stylesheet.css);
 
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    scroll-behavior: smooth
+    scroll-behavior: smooth;
+    font-family: Montserrat;
 }
 
-
-@import "../scss/font";
-@import "../scss/btn";
+@import "../scss/variables";
 @import "../scss/header";
 @import "../scss/home";
 @import "../scss/services";

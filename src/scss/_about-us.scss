@@ -1,73 +1,51 @@
 .about-us {
-    margin-top: 105px;
-    padding-top: 85px;
+    padding-top: 100px;
+    padding-bottom: 70px;
     background: #F6F6F8;
 
-    &__img {
-        width: 100%;
-        height: 100%;
+    &__descr {
+        margin-top: 40px;
     }
 
-    .container {
-        .row-1 {
+    &__img {
+        object-fit: cover;
+        width: 100%;
+    }
+
+    &__line {
+        margin-top: 90px;
+        margin-bottom: 70px;
+    }
+
+
+    .wrapper {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        &__title {
             position: relative;
+            font-weight: normal;
+            padding-left: 50px;
+            line-height: 1;
 
             &::before {
-                position: absolute;
                 content: '';
-                max-width: 1110px;
-                width: 100%;
-                height: 1px;
-                background: #E0E0E0;
-                top: 100%;
-                margin-top: 90px;
+                position: absolute;
+                top: 50%;
+                left: 0;
+                transform: translateY(-50%);
+                width: 30px;
+                height: 30px;
+                background: url(../images/about-us/about-us__icon.svg);
             }
         }
 
-        .row-2 {
-            margin-top: 160px;
-            padding-bottom: 70px;
-
-            .col {
-                .wrapper {
-                    width: 104px;
-                    height: 67px;
-                    display: flex;
-                    flex-wrap: wrap;
-                    align-items: center;
-
-                    &__icon {
-                        width: 30px;
-                        height: 30px;
-                        margin: 0 20px 0 0;
-                    }
-
-                    &__title {
-                        @include textStyle(normal, 36px, 53px, #000);
-                        margin: 0;
-                    }
-
-                    &__text {
-                        @include textStyle(normal, 16px, 25px, #999);
-                        margin: 0;
-                    }
-                }
-            }
+        &__text {
+            @include textStyle(normal, 16px, 25px, #999);
+            margin: 0;
         }
-    }
-
-    &__title {
-        @include textStyle(bold, 36px, 53px, #323232);
-    }
-
-    &__descr {
-        @include textStyle(normal, 16px, 25px, #999);
-        margin: 40px 0 0;
-    }
-
-    &__link {
-        @include textStyle(500, 16px, 20px, #4985FF);
-        text-decoration-line: underline;
-        margin: 30px 0 0;
     }
 }

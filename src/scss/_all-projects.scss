@@ -1,31 +1,18 @@
 .all-project {
-    position: relative;
-    margin-top: 85px;
     display: flex;
     padding: 100px 0 130px;
     background: #F6F6F8;
 
-    .container {
-        .row {
-            .col_1 {
-                margin: 70px 0 0;
-            }
-        }
-    }
-
     &__title {
-        @include textStyle(bold, 36px, 53px, #000);
         text-align: center;
     }
 
     &__descr {
-        @include textStyle(normal, 16px, 25px, #999);
         text-align: center;
-        margin: 50px auto 0;
+        margin: 50px 0 70px;
     }
 
     &__btn {
-        @include btn;
         margin-top: 50px;
     }
 }

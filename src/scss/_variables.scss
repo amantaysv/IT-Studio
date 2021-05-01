@@ -1,0 +1,99 @@
+@mixin btn {
+   display: block;
+   width: 200px;
+   height: 45px;
+   border-radius: 30px;
+   background-color: #4985FF;
+   border: none;
+   outline: none;
+   box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
+   font-family: Montserrat;
+   font-weight: 500;
+   color: #ffffff;
+   margin: 0 auto;
+
+   &:focus {
+      outline: none;
+   }
+
+   &:hover {
+      background: #1a66ff;
+   }
+}
+
+.btn {
+   display: block;
+   width: 200px;
+   height: 45px;
+   border-radius: 30px;
+   background-color: #4985FF;
+   font-weight: 500;
+   color: #ffffff;
+   margin: 0 auto;
+
+   &:focus {
+      box-shadow: none;
+   }
+
+   &:hover {
+      background: #1a66ff;
+      color: #fff;
+   }
+}
+
+@mixin textStyle($fw, $fz, $lh, $cl) {
+   font-family: Montserrat, sans-serif;
+   font-style: normal;
+   font-weight: $fw;
+   font-size: $fz;
+   line-height: $lh;
+   color: $cl;
+}
+
+@mixin cyrcle($width, $height, $bdcolor) {
+   content: '';
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   width: $width;
+   height: $height;
+   border: 1px solid $bdcolor;
+   border-radius: 100%;
+   z-index: -2;
+}
+
+.title {
+   font-family: Montserrat;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 36px;
+   line-height: 53px;
+}
+
+.descr {
+   font-family: Montserrat;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 16px;
+   line-height: 25px;
+   color: #999999;
+   margin: 0;
+}
+
+.line {
+   width: 100%;
+   height: 1px;
+   background: #E0E0E0;
+   margin: 0;
+}
+
+.link {
+   font-style: normal;
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 20px;
+   text-decoration-line: underline;
+   color: #4985FF;
+   margin-top: 30px;
+}

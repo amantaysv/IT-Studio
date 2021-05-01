@@ -1,74 +1,51 @@
-@mixin cyrcle($width, $height, $bdcolor) {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: $width;
-    height: $height;
-    border: 1px solid $bdcolor;
-    border-radius: 100%;
-    z-index: -2;
-}
-
 .services {
-    max-width: 1113px;
-    width: 100%;
-    margin: 110px auto 0;
+    padding-top: 110px;
+    padding-bottom: 105px;
 
     &__title {
-        @include textStyle(bold, 36px, 53px, #323232);
         text-align: center;
-        margin: 0;
     }
 
     &__descr {
-        @include textStyle(normal, 16px, 20px, #999);
         text-align: center;
-        margin: 50px 0 0;
+        margin: 50px 0 116px;
     }
 
-    .row {
-        .col {
-            .wrapper {
-                display: flex;
-                margin-right: 30px;
-                margin-left: 30px;
+    .wrapper {
+        position: relative;
 
-                &__icon {
-                    width: 40px;
-                    height: 40px;
-                    position: relative;
-                    margin: 105px 50px 0 0;
+        &__icon {
+            position: absolute;
+            top: 0;
+            left: 55px;
+            transform: translateX(-50%);
+            width: 40px;
+            height: 40px;
+            background: url(../images/services/services__icon.svg);
 
-                    &::before {
-                        @include cyrcle(90px, 90px, #4985FF);
-                    }
-
-                    &::after {
-                        @include cyrcle(110px, 110px, #E0E0E0);
-                    }
-                }
-
-                &__title {
-                    @include textStyle(600, 18px, 22px, #000);
-                    margin: 116px 0 0;
-                    position: relative;
-                    z-index: -2;
-                }
-
-                &__descr {
-                    @include textStyle(normal, 14px, 22px, #999);
-                    margin: 12px 0 0 0;
-                    position: relative;
-                    z-index: -2;
-                }
+            &::before {
+                @include cyrcle(90px, 90px, #4985FF);
             }
+
+            &::after {
+                @include cyrcle(110px, 110px, #E0E0E0);
+            }
+        }
+
+        &__title {
+            @include textStyle(600, 18px, 22px, #000);
+            padding-left: 127px;
+            padding-top: 11px;
+            position: relative;
+        }
+
+        &__descr {
+            padding-left: 127px;
         }
     }
 
+
     &__btn {
-        @include btn;
         margin-top: 55px;
     }
 }

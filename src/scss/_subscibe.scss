@@ -1,20 +1,23 @@
 .subscribe {
-    margin: 85px auto 0;
-    position: relative;
+    padding-top: 165px;
+    padding-bottom: 85px;
+
+    &__line {
+        margin-bottom: 85px;
+    }
 
     &__title {
         @include textStyle(600, 18px, 22px, #000);
         text-align: center;
-        margin: 0 auto;
     }
 
     &__descr {
         @include textStyle(normal, 16px, 25px, #999);
         text-align: center;
-        margin: 20px auto 0;
+        margin: 20px 0 30px;
     }
 
-    &__area {
+    &__form {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -23,7 +26,7 @@
         height: 45px;
         box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
         border-radius: 25px;
-        margin: 30px auto 0;
+        margin: 0 auto;
     }
 
     &__email {
@@ -59,8 +62,9 @@
     }
 
     &__text {
-        @include textStyle(500, 13px, 21px, #999);
+        font-size: 13px;
+        line-height: 21px;
         text-align: center;
-        margin: 35px auto 0;
+        margin-top: 35px;
     }
 }
