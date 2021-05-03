@@ -1,6 +1,7 @@
 .services {
     padding-top: 110px;
-    padding-bottom: 105px;
+    @include adaptive-value(padding-top, 110, 50, 0);
+    @include adaptive-value(padding-bottom, 105, 50, 0);
 
     &__title {
         text-align: center;
@@ -8,11 +9,13 @@
 
     &__descr {
         text-align: center;
-        margin: 50px 0 116px;
+        margin-top: 50px;
     }
 
     .wrapper {
         position: relative;
+        @include adaptive-value(margin-top, 116, 40, 0);
+
 
         &__icon {
             position: absolute;

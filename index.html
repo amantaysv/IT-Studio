@@ -11,28 +11,24 @@
 <body>
   <header class="header">
     <div class="container">
-      <nav class="navbar navbar-expand-lg p-0">
-        <div class="container">
-          <div class="collapse navbar-collapse">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a href="" class="nav-link">Главная</a>
-              </li>
-              <li class="nav-item">
-                <a href="" class="nav-link">Наши проекты</a>
-              </li>
-              <li class="nav-item">
-                <a href="" class="nav-link">Услуги</a>
-              </li>
-              <li class="nav-item">
-                <a href="" class="nav-link">Новости</a>
-              </li>
-              <li class="nav-item">
-                <a href="" class="nav-link">Контакты</a>
-              </li>
-            </ul>
-          </div>
-        </div>
+      <nav class="navbar navbar-expand-lg">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a href="" class="nav-link">Главная</a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link">Наши проекты</a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link">Услуги</a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link">Новости</a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link">Контакты</a>
+          </li>
+        </ul>
       </nav>
       <div class="burger">
         <span class="burger__line"></span>
@@ -43,14 +39,16 @@
   <main class="main">
     <section class="home">
       <div class="container">
-        <h1 class="home__title">Передовая IT студия</h1>
-        <p class="home__descr">Мы создаем легкие решения <br>
-          сложных задач и проблем</p>
-        <button type="button" class="btn home__btn">Наши проекты</button>
+        <div class="wrapper">
+          <h1 class="home__title">Передовая IT студия</h1>
+          <p class="home__descr">Мы создаем легкие решения <br>
+            сложных задач и проблем</p>
+          <button type="button" class="btn home__btn">Наши проекты</button>
+        </div>
     </section>
     <section class="services">
       <div class="container">
-        <h2 class="title services__title">Мы создаем мобильные приложения <br>
+        <h2 class="title text-center">Мы создаем мобильные приложения <br>
           для крупных корпораций</h2>
         <p class="descr services__descr">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
           Lorem <br>
@@ -89,7 +87,7 @@
       <div class="container">
         <div class="row">
           <div class="col-12 col-md-6 align-self-center">
-            <h2 class="title">Высокие стандарты <br>
+            <h2 class="title about-us__title">Высокие стандарты <br>
               разработки</h2>
             <p class="descr about-us__descr">Lorem Ipsum - это текст-"рыба", часто используемый в <br> печати и
               вэб-дизайне.
@@ -138,12 +136,11 @@
     </section>
     <section class="all-services">
       <div class="container">
-        <div class="d-flex justify-content-between align-items-center">
+        <div class="d-flex justify-content-between align-items-center flex-wrap">
           <h2 class="title all-services__title">Наши работы, на которых <br>
             мы специализируемся</h2>
           <button class="btn all-services__btn">Все услуги</button>
         </div>
-        <div class="all-services__margin"></div>
         <div class="row">
           <div class="col-12 col-md-4">
             <div class="wrapper">
@@ -184,16 +181,24 @@
           Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. </p>
         <div class="row">
           <div class="col-12 col-md-3">
-            <img class="w-100" src="src/images/code.png" alt="">
+            <div class="wrapper">
+              <img class="w-100" src="src/images/code.png" alt="">
+            </div>
           </div>
           <div class="col-12 col-md-3">
-            <img class="w-100" src="src/images/code.png" alt="">
+            <div class="wrapper">
+              <img class="w-100" src="src/images/code.png" alt="">
+            </div>
           </div>
           <div class="col-12 col-md-3">
-            <img class="w-100" src="src/images/code.png" alt="">
+            <div class="wrapper">
+              <img class="w-100" src="src/images/code.png" alt="">
+            </div>
           </div>
           <div class="col-12 col-md-3">
-            <img class="w-100" src="src/images/code.png" alt="">
+            <div class="wrapper">
+              <img class="w-100" src="src/images/code.png" alt="">
+            </div>
           </div>
         </div>
         <button class="btn all-project__btn">Все проекты</button>
@@ -227,47 +232,77 @@
       </div>
     </section>
   </main>
-
   <footer class="footer">
     <div class="container">
       <div class="row">
         <div class="col">
-          <div class="wrapper1">
-            <h2 class="wrapper__title">Контактная информация</h2>
-            <p class="wrapper__text wrapper__mail">test@test.ru</p>
-            <p class="wrapper__text wrapper__phone">+8 777 555 66 99</p>
-            <p class="wrapper__text wrapper__address">Москва, Бульвар Ленина 33</p>
-          </div>
+          <h2 class="footer__title">Контактная информация</h2>
+          <ul class="footer-nav">
+            <li class="footer-nav__item">
+              <a href="" class="footer-nav__link"><i class="fas fa-envelope"></i>test@test.ru</a>
+            </li>
+            <li class="footer-nav__item">
+              <a href="" class="footer-nav__link"><i class="fas fa-phone"></i>+8 777 555 66 99</a>
+            </li>
+            <li class="footer-nav__item">
+              <a href="" class="footer-nav__link"><i class="fas fa-map-marker-alt"></i>Москва, Бульвар Ленина 33</a>
+            </li>
+          </ul>
         </div>
         <div class="col">
-          <div class="wrapper">
-            <h2 class="wrapper__title">Основные ссылки</h2>
-            <p class="wrapper__text wrapper__arrow"></i>Главная</p>
-            <p class="wrapper__text wrapper__arrow">Наши проекты</p>
-            <p class="wrapper__text wrapper__arrow">Наши услуги</p>
-            <p class="wrapper__text wrapper__arrow">Контакты</p>
-          </div>
+          <h2 class="footer__title">Основные ссылки</h2>
+          <ul class="footer-nav">
+            <li class="footer-nav__item">
+              <a href="" class="footer-nav__link"><i class="fas fa-chevron-right"></i>Главная</a>
+            </li>
+            <li class="footer-nav__item">
+              <a href="" class="footer-nav__link"><i class="fas fa-chevron-right"></i>Наши проекты</a>
+            </li>
+            <li class="footer-nav__item">
+              <a href="" class="footer-nav__link"><i class="fas fa-chevron-right"></i>Наши услуги</a>
+            </li>
+            <li class="footer-nav__item">
+              <a href="" class="footer-nav__link"><i class="fas fa-chevron-right"></i>Контакты</a>
+            </li>
+          </ul>
         </div>
         <div class="col">
-          <div class="wrapper">
-            <h2 class="wrapper__title">Наши проекты</h2>
-            <p class="wrapper__text wrapper__arrow">РосНано</p>
-            <p class="wrapper__text wrapper__arrow">Сколково</p>
-            <p class="wrapper__text wrapper__arrow">Проект "Восток"</p>
-            <p class="wrapper__text wrapper__arrow">ТЭЦ Калининграда</p>
-          </div>
+          <h2 class="footer__title">Наши проекты</h2>
+          <ul class="footer-nav">
+            <li class="footer-nav__item">
+              <a href="" class="footer-nav__link"><i class="fas fa-chevron-right"></i>РосНано</a>
+            </li>
+            <li class="footer-nav__item">
+              <a href="" class="footer-nav__link"><i class="fas fa-chevron-right"></i>Сколково</a>
+            </li>
+            <li class="footer-nav__item">
+              <a href="" class="footer-nav__link"><i class="fas fa-chevron-right"></i>Проект "Восток"</a>
+            </li>
+            <li class="footer-nav__item">
+              <a href="" class="footer-nav__link"><i class="fas fa-chevron-right"></i>ТЭЦ Калининграда</a>
+            </li>
+          </ul>
         </div>
         <div class="col">
-          <div class="wrapper">
-            <h2 class="wrapper__title">Социальные сети</h2>
-            <p class="wrapper__text wrapper__arrow">VK.com</p>
-            <p class="wrapper__text wrapper__arrow">Instagram</p>
-            <p class="wrapper__text wrapper__arrow">Facebook</p>
-            <p class="wrapper__text wrapper__arrow">Twitter</p>
-          </div>
+          <h2 class="footer__title">Социальные сети</h2>
+          <ul class="footer-nav">
+            <li class="footer-nav__item">
+              <a href="" class="footer-nav__link"><i class="fab fa-vk"></i>VK.com</a>
+            </li>
+            <li class="footer-nav__item">
+              <a href="" class="footer-nav__link"><i class="fab fa-instagram"></i>Instagram</a>
+            </li>
+            <li class="footer-nav__item">
+              <a href="" class="footer-nav__link"><i class="fab fa-facebook-f"></i>Facebook</a>
+            </li>
+            <li class="footer-nav__item">
+              <a href="" class="footer-nav__link"><i class="fab fa-twitter"></i>Twitter</a>
+            </li>
+          </ul>
         </div>
       </div>
-      <h3 class="footer__text">(с) 2019. Все права защищены.</h3>
+      <div class="line footer__line"></div>
+      <h3 class="footer__rights">(с) 2021. Все права защищены.</h3>
     </div>
   </footer>
   <script src="./src/libs/jquery/js/jquery.min.js"></script>

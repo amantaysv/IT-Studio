@@ -1,73 +1,38 @@
 .footer {
-    margin: 85px auto 0;
-    position: relative;
     padding: 70px 0 30px;
     background: #f6f6f8;
 
-    .container {
-        .row {
-            justify-content: space-between;
-            margin: 0 auto;
-            border-bottom: 1px solid #E0E0E0;
+    &__title {
+        @include textStyle(600, 18px, 22px, #000);
+        margin-bottom: 35px;
+    }
 
-            .col {
+    &-nav {
+        padding: 0;
+        list-style: none;
 
-                .wrapper1 {
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: space-between;
-                }
-
-                .wrapper {
-                    position: relative;
-                    flex-direction: column;
-                    justify-content: space-between;
-
-                    &__title {
-                        @include textStyle(600, 18px, 22px, #000);
-                    }
-
-                    &__text {
-                        @include textStyle(normal, 14px, 22px, #999);
-                    }
-
-                    &__arrow::before {
-                        content: '\f054';
-                        font-family: 'Font Awesome 5 Free', 'Font Awesome 5 Brands';
-                        font-weight: 900;
-                        position: relative;
-                        margin-right: 12.6px;
-                    }
-
-                    &__mail::before {
-                        content: '\f0e0';
-                        font-family: 'Font Awesome 5 Free', 'Font Awesome 5 Brands';
-                        font-weight: 900;
-                        position: relative;
-                        margin-right: 15px;
-                    }
-
-                    &__phone::before {
-                        content: '\f879';
-                        font-family: 'Font Awesome 5 Free', 'Font Awesome 5 Brands';
-                        font-weight: 900;
-                        position: relative;
-                        margin-right: 15px;
-                    }
-
-                    &__address::before {
-                        content: '\f3c5';
-                        font-family: 'Font Awesome 5 Free', 'Font Awesome 5 Brands';
-                        font-weight: 900;
-                        position: relative;
-                        margin-right: 15px;
-                    }
-                }
+        &__item {
+            &:not(:last-child) {
+                margin-bottom: 30px;
             }
+        }
+
+        &__link {
+            font-size: 14px;
+            color: #999999;
+            display: flex;
+            column-gap: 10px;
+            text-decoration: none;
+            align-items: center;
         }
     }
 
-    &__text {
+    &__line {
+        @include adaptive-value(margin-top, 70, 50, 0);
+        margin-bottom: 30px;
+    }
+
+    &__rights {
         @include textStyle(normal, 13px, 21px, #999);
         text-align: center;
         margin-top: 30px;

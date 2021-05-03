@@ -1,5 +1,6 @@
 .all-services {
-    padding: 100px 0 85px;
+    @include adaptive-value(padding-top, 100, 50, 0);
+    @include adaptive-value(padding-bottom, 85, 50, 0);
     background: #fff linear-gradient(90deg, #504DC2 20.44%, #5F12D0 80.91%) center top/100% 50% no-repeat;
 
     &__title {
@@ -10,11 +11,8 @@
         margin: 0;
     }
 
-    &__margin {
-        margin-bottom: 70px;
-    }
-
     .wrapper {
+        @include adaptive-value(margin-top, 70, 50, 0);
         &__title {
             font-size: 18px;
             line-height: 22px;
@@ -28,6 +26,6 @@
     }
 
     &__line {
-        margin-top: 85px;
+        @include adaptive-value(margin-top, 85, 50, 0);
     }
 }

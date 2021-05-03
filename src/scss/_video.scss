@@ -1,5 +1,5 @@
 .video {
-    padding-top: 70px;
+    @include adaptive-value(padding-top, 70, 50, 0);
     background: url(../images/video/videoBg.png) center top/ cover no-repeat;
 
     &__title {
