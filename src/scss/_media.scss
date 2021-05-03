@@ -215,6 +215,10 @@
         }
     }
 
+    .home {
+        background: url(../images/home/sm-bg.webp) center center / cover no-repeat;
+    }
+
     .services {
         &__title {
             font-weight: 600;

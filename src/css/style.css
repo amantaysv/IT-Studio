@@ -870,6 +870,9 @@ main {
     -o-transition: .25s;
     transition: .25s;
   }
+  .home {
+    background: url(../images/home/sm-bg.webp) center center/cover no-repeat;
+  }
   .services__title {
     font-weight: 600;
   }
