@@ -1,11 +1,16 @@
 @import url(../libs/bootstrap/css/bootstrap.min.css);
 @import url(../libs/fancybox/css/jquery.fancybox.min.css);
 @import url(../libs/fontawesome/css/all.min.css);
+@import url(../libs/aos/css/aos.css);
 @import url(../fonts/Montserrat/stylesheet.css);
 
 * {
     scroll-behavior: smooth;
     font-family: Montserrat;
+}
+
+main {
+    overflow: hidden;
 }
 
 @import "../scss/adaptive-value";
@@ -20,3 +25,4 @@
 @import "../scss/subscibe";
 @import "../scss/footer";
 @import "../scss/media";
+@import "../scss/aos-mobile";
