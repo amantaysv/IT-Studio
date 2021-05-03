@@ -13,6 +13,7 @@
 
     .wrapper {
         @include adaptive-value(margin-top, 70, 50, 0);
+
         &__title {
             font-size: 18px;
             line-height: 22px;
@@ -22,6 +23,11 @@
             span {
                 color: #4985FF;
             }
+        }
+
+        img {
+            background: grey;
+            border-radius: 10px;
         }
     }
 

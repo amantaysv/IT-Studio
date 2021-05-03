@@ -8,14 +8,15 @@
     }
 
     &__img {
+        background: grey;
         object-fit: cover;
         width: 100%;
+        border-radius: 30px;
     }
 
     &__line {
         @include adaptive-value(margin-top, 90, 40, 0);
     }
-
 
     .wrapper {
         @include adaptive-value(margin-top, 70, 40, 0);

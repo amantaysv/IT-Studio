@@ -16,7 +16,6 @@
         position: relative;
         @include adaptive-value(margin-top, 116, 40, 0);
 
-
         &__icon {
             position: absolute;
             top: 0;
@@ -24,7 +23,7 @@
             transform: translateX(-50%);
             width: 40px;
             height: 40px;
-            background: url(../images/services/services__icon.svg);
+            background: url(../images/services/services__icon.svg) center center / cover no-repeat;
 
             &::before {
                 @include cyrcle(90px, 90px, #4985FF);

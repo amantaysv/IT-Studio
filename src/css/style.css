@@ -112,7 +112,7 @@ main {
 }
 
 .home {
-  background: url(../images/bg.png) center center/cover no-repeat;
+  background: url(../images/home/bg.webp) center center/cover no-repeat;
   min-height: 100vh;
   background-attachment: fixed;
 }
@@ -184,7 +184,7 @@ main {
           transform: translateX(-50%);
   width: 40px;
   height: 40px;
-  background: url(../images/services/services__icon.svg);
+  background: url(../images/services/services__icon.svg) center center/cover no-repeat;
 }
 
 .services .wrapper__icon::before {
@@ -248,9 +248,11 @@ main {
 }
 
 .about-us__img {
+  background: grey;
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
+  border-radius: 30px;
 }
 
 .about-us__line {
@@ -336,6 +338,11 @@ main {
   color: #4985FF;
 }
 
+.all-services .wrapper img {
+  background: grey;
+  border-radius: 10px;
+}
+
 .all-services__line {
   margin-top: calc(50px + 35 * ((100vw - 320px) / 1080));
 }
@@ -359,13 +366,20 @@ main {
   margin-top: calc(50px + 20 * ((100vw - 320px) / 1080));
 }
 
+.all-project .wrapper img {
+  background: grey;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+}
+
 .all-project__btn {
   margin-top: 50px;
 }
 
 .video {
   padding-top: calc(50px + 20 * ((100vw - 320px) / 1080));
-  background: url(../images/video/videoBg.png) center top/cover no-repeat;
+  background: url(../images/video/videoBg.webp) center top/cover no-repeat;
 }
 
 .video__title {
@@ -388,7 +402,7 @@ main {
   border-radius: 10px;
   -webkit-box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
           box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
-  background: url(../images/video/video__block.png) center/cover no-repeat;
+  background: url(../images/video/video__block.webp) center/cover no-repeat;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;

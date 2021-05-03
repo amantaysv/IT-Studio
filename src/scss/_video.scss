@@ -1,6 +1,6 @@
 .video {
     @include adaptive-value(padding-top, 70, 50, 0);
-    background: url(../images/video/videoBg.png) center top/ cover no-repeat;
+    background: url(../images/video/videoBg.webp) center top/ cover no-repeat;
 
     &__title {
         text-align: center;
@@ -21,7 +21,7 @@
         width: 100%;
         border-radius: 10px;
         box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
-        background: url(../images/video/video__block.png) center/cover no-repeat;
+        background: url(../images/video/video__block.webp) center/cover no-repeat;
         margin: 0 auto;
         display: flex;
         justify-content: center;
