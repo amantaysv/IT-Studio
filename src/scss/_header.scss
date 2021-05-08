@@ -7,9 +7,20 @@
 
     .navbar {
         padding: 0;
+        display: flex;
+        position: relative;
+
         justify-content: flex-end;
+        align-items: center;
+        flex-wrap: wrap; // allow us to do the line break for collapsing content
 
         &-nav {
+            display: flex;
+            list-style: none;
+            margin-bottom: 0;
+            padding-left: 0;
+            margin-top: 0;
+
             .nav {
                 &-item {
                     position: relative;
@@ -34,6 +45,7 @@
                     color: #fff;
                     padding: 0;
                     font-weight: 500;
+                    text-decoration: none;
                 }
             }
         }

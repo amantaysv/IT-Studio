@@ -20,7 +20,9 @@
       background: #1a66ff;
    }
 }
-
+.w-100 {
+   width: 100%;
+}
 .btn {
    display: block;
    width: 200px;
@@ -30,8 +32,14 @@
    font-weight: 500;
    color: #ffffff;
    margin: 0 auto;
+   text-align: center;
+   vertical-align: middle;
+   user-select: none;
+   border: none;
+   cursor: pointer;
 
    &:focus {
+      outline: none;
       box-shadow: none;
    }
 
@@ -69,6 +77,10 @@
    font-weight: bold;
    @include adaptive-value(font-size, 36, 22, 0);
    @include adaptive-value(line-height, 53, 35, 0);
+}
+
+.text-center {
+   text-align: center;
 }
 
 .descr {
