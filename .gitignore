@@ -6,7 +6,10 @@ npm-debug.log
 # Local development
 *.env
 *.dev
+*.scss
 .DS_Store
+style.css
+/scss
 
 # Docker
 Dockerfile
