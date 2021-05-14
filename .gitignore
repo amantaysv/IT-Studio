@@ -7,7 +7,7 @@ npm-debug.log
 *.env
 *.dev
 *.scss
-.DS_Store
+*.DS_Store
 style.css
 /scss
 
